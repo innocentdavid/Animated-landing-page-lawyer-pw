@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(/images/3197108_123479679912634609444915985621589608749385n_jpeg0e3f55dfefd49ca805cd7fc35af9816a.jpeg);
+  background-color: #cccccc;
+  height: 100vh;
+  overflow: hidden;
+  //   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text,
+.portfolio,
+.social-handles {
+  position: absolute;
+}
+
+.hero-text {
+  text-align: center;
+  top: 40%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  h1 {
+    animation: left-to-right 2s linear;
+  }
+  h3 {
+    animation: right-to-left 2s linear;
+  }
+}
+
+.portfolio {
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      padding: 2rem;
+      border: 1px solid;
+      margin: 2rem;
+      text-align: center;
+      animation: portfolio linear;
+      background: rgb(156, 1, 1);
+    }
+    li:nth-child(1) {
+      animation-duration: 2s;
+    }
+    li:nth-child(2) {
+      animation-duration: 3s;
+    }
+    li:nth-child(3) {
+      animation-duration: 4s;
+    }
+    li:nth-child(4) {
+      animation-duration: 5s;
+    }
+    li:nth-child(5) {
+      animation-duration: 6s;
+    }
+    li:hover {
+      background: rgb(97, 1, 1);
+      .fa {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+.hireMe{
+  animation: hireMe 2s infinite;
+}
+
+.portfolio:hover,
+.social-handles:hover {
+  cursor: pointer;
+}
+
+.social-handles {
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  height: 20vh;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      animation: portfolio 2s linear;
+      .fa {
+        cursor: pointer;
+        padding: 1.5rem;
+        background: linear-gradient(
+          45deg,
+          rgb(92, 26, 28),
+          rgb(121, 34, 37),
+          rgb(153, 86, 86),
+          rgb(124, 37, 42),
+          rgb(124, 34, 39)
+        );
+        border: 1px solid;
+        border-radius: 20px;
+        margin: 2rem;
+        text-align: center;
+      }
+      .fa:hover {
+        background: linear-gradient(45deg, rgb(48, 13, 15), rgb(92, 26, 28), rgb(71, 20, 22), rgb(56, 16, 18));
+      }
+    }
+  }
+}
+
+.main {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 78%;
+  height: 78vh;
+  margin-right: 1%;
+  margin-top: 1vh;
+  background: rgba(0, 0, 0, 0.7);
+  .close-main {
+    display: none;
+    opacity: 0.2;
+    position: absolute;
+    top: 1vh;
+    right: 2%;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .close-main:hover {
+    opacity: 1;
+  }
+}
+
+@keyframes portfolio {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes left-to-right {
+  0% {
+    margin-left: -200%;
+  }
+  50% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+
+@keyframes right-to-left {
+  0% {
+    margin-right: -200%;
+  }
+  50% {
+    margin-right: -100%;
+  }
+  100% {
+    margin-right: 0%;
+  }
+}
+
+@keyframes hireMe {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

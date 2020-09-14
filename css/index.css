@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(/images/3197108_123479679912634609444915985621589608749385n_jpeg0e3f55dfefd49ca805cd7fc35af9816a.jpeg);
+  background-color: #cccccc;
+  height: 100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text,
+.portfolio,
+.social-handles {
+  position: absolute;
+}
+
+.hero-text {
+  text-align: center;
+  top: 40%;
+  left: 70%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.hero-text h1 {
+  -webkit-animation: left-to-right 2s linear;
+          animation: left-to-right 2s linear;
+}
+
+.hero-text h3 {
+  -webkit-animation: right-to-left 2s linear;
+          animation: right-to-left 2s linear;
+}
+
+.portfolio {
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.portfolio ul {
+  list-style-type: none;
+}
+
+.portfolio ul li {
+  padding: 2rem;
+  border: 1px solid;
+  margin: 2rem;
+  text-align: center;
+  -webkit-animation: portfolio linear;
+          animation: portfolio linear;
+  background: #9c0101;
+}
+
+.portfolio ul li:nth-child(1) {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.portfolio ul li:nth-child(2) {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.portfolio ul li:nth-child(3) {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+.portfolio ul li:nth-child(4) {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+.portfolio ul li:nth-child(5) {
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+}
+
+.portfolio ul li:hover {
+  background: #610101;
+}
+
+.portfolio ul li:hover .fa {
+  font-size: 1.1rem;
+}
+
+.hireMe {
+  -webkit-animation: hireMe 2s infinite;
+          animation: hireMe 2s infinite;
+}
+
+.portfolio:hover,
+.social-handles:hover {
+  cursor: pointer;
+}
+
+.social-handles {
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  height: 20vh;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.social-handles ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.social-handles ul li {
+  -webkit-animation: portfolio 2s linear;
+          animation: portfolio 2s linear;
+}
+
+.social-handles ul li .fa {
+  cursor: pointer;
+  padding: 1.5rem;
+  background: linear-gradient(45deg, #5c1a1c, #792225, #995656, #7c252a, #7c2227);
+  border: 1px solid;
+  border-radius: 20px;
+  margin: 2rem;
+  text-align: center;
+}
+
+.social-handles ul li .fa:hover {
+  background: linear-gradient(45deg, #300d0f, #5c1a1c, #471416, #381012);
+}
+
+.main {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 78%;
+  height: 78vh;
+  margin-right: 1%;
+  margin-top: 1vh;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.main .close-main {
+  display: none;
+  opacity: 0.2;
+  position: absolute;
+  top: 1vh;
+  right: 2%;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.main .close-main:hover {
+  opacity: 1;
+}
+
+@-webkit-keyframes portfolio {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes portfolio {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes left-to-right {
+  0% {
+    margin-left: -200%;
+  }
+  50% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+
+@keyframes left-to-right {
+  0% {
+    margin-left: -200%;
+  }
+  50% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+
+@-webkit-keyframes right-to-left {
+  0% {
+    margin-right: -200%;
+  }
+  50% {
+    margin-right: -100%;
+  }
+  100% {
+    margin-right: 0%;
+  }
+}
+
+@keyframes right-to-left {
+  0% {
+    margin-right: -200%;
+  }
+  50% {
+    margin-right: -100%;
+  }
+  100% {
+    margin-right: 0%;
+  }
+}
+
+@-webkit-keyframes hireMe {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hireMe {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=index.css.map */
